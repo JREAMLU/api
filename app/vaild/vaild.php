@@ -16,4 +16,12 @@ $vaildConfigs = [
     'collect/searchusers' => [
         'nickname' => 'string|length_max:16',
     ],
+    'cms/slideshow' => [
+    ],
+    'cms/news' => [
+        'pageindex' => 'present|integer',
+        'pagesize' => 'present|integer|min:1',
+    ],
+    'cms/contact' => [
+    ],
 ];

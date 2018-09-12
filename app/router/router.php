@@ -1,6 +1,7 @@
 <?php
 
 $routeConfigs = [
+    // ip
     [
         'type' => 'rewrite',
         'match' => '/service/getipinfo',
@@ -39,6 +40,32 @@ $routeConfigs = [
         'route' => [
             'controller' => 'collect',
             'action' => 'searchusers',
+        ],
+    ],
+
+    // cms
+    [
+        'type' => 'rewrite',
+        'match' => '/cms/get/slideshow',
+        'route' => [
+            'controller' => 'cms',
+            'action' => 'slideshow',
+        ],
+    ],
+    [
+        'type' => 'rewrite',
+        'match' => '/cms/get/news',
+        'route' => [
+            'controller' => 'cms',
+            'action' => 'news',
+        ],
+    ],
+    [
+        'type' => 'rewrite',
+        'match' => '/cms/get/contact',
+        'route' => [
+            'controller' => 'cms',
+            'action' => 'contact',
         ],
     ],
 ];
